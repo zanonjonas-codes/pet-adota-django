@@ -14,7 +14,7 @@ ENV PYTHONUNBUFFERED=1
 
 # Install the required packages to enable intallation of psycopg2
 RUN apt-get update && \
-    apt-get install -y libpq-dev gcc git bash telnet sudo &&\
+    apt-get install -y libpq-dev gcc git bash telnet sudo postgresql-client &&\
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
